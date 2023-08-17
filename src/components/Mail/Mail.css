@@ -1,0 +1,9 @@
+.inner-container{
+    gap: 1.5rem;
+    background: black;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+   border: none;
+   text-align: center;
+}

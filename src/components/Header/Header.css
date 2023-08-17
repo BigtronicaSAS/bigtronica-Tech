@@ -1,0 +1,221 @@
+.h-wrapper {
+  color: white;
+}
+
+.h-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.logo-container {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.logo-container:hover {
+  transform: scale(1.15);
+}
+
+.logo-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.h-menu {
+  gap: 5rem;
+}
+
+.h-menu>*:hover {
+  cursor: pointer;
+}
+
+.navbar-text {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 0.95rem;
+}
+
+.social-icon {
+  display: flex;
+  margin-left: 14px;
+  gap: 5px;
+}
+
+.social-icon a {
+  width: 40px;
+  height: 40px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-icon a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+
+.social-icon a img {
+  width: 100%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+ .button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.button span {
+  z-index: 2;
+}
+
+ .button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+ .button:hover {
+  color: #121212;
+
+}
+
+.button:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .navbar-text {
+    gap: 20px;
+  }
+
+  .h-menu {
+    gap: 2.5rem;
+  }
+
+  .navbar-text .button {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .h-menu {
+    display: none;
+  }
+
+  .social-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 200;
+    gap: 25px;
+
+  }
+
+  .social-icon a {
+    width: 55px;
+    height: 55px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .h-container {
+    padding: 1rem 0.5rem 0.5rem 0.9rem;
+  }
+
+  .secondaryText {
+    font-size: 1rem;
+  }
+
+  .navbar-text .button {
+    padding: 0.65rem 1.2rem;
+    font-size: 1.25rem;
+    margin-left: 0;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  .social-icon {
+    gap: 15px;
+  }
+
+  .social-icon a {
+    width: 35px;
+    height: 35px;
+  }
+
+  .navbar-text .button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .social-icon a {
+    display: none;
+  }
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "image": "./marksAll/arduino.svg"
+  },
+  {
+    "image": "./marksAll/esp32.svg"
+  },
+  {
+    "image": "./marksAll/microchip.svg"
+    
+  },
+  {
+    "image": "./marksAll/creality.svg"
+    
+  },
+  {
+    "image": "./marksAll/atmel.svg"
+    
+  },
+  {
+    "image": "./marksAll/texas.svg"
+    
+  },
+  {
+    "image": "./marksAll/dfrobot.svg"
+    
+  },
+  {
+    "image": "./marksAll/unit.svg"
+    
+  },
+  {
+    "image": "./marksAll/sparkfun.svg"
+    
+  },
+  {
+    "image": "./marksAll/pololu.svg"
+    
+  },
+  {
+    "image": "./marksAll/newline.svg"
+    
+  },
+  {
+    "image": "./marksAll/carspa.svg"
+    
+  },
+  {
+    "image": "./marksAll/kester.svg"
+    
+  },
+  {
+    "image": "./marksAll/goot.svg"
+    
+  },
+  {
+    "image": "./marksAll/yaxun.svg"
+    
+  },
+  {
+    "image": "./marksAll/tech.svg"
+    
+  },
+  {
+    "image": "./marksAll/proskit.svg"
+    
+  },
+  {
+    "image": "./marksAll/truper.svg"
+    
+  },
+  {
+    "image": "./marksAll/hitronic.svg"
+    
+  },
+  {
+    "image": "./marksAll/gp.svg"
+    
+  },
+  {
+    "image": "./marksAll/beston.svg"
+    
+  },
+  {
+    "image": "./marksAll/tronex.svg"
+    
+  },
+  {
+    "image": "./marksAll/voltimax.svg"
+    
+  },
+  {
+    "image": "./marksAll/tplink.svg"
+    
+  },
+  {
+    "image": "./marksAll/mtek.svg"
+    
+  },
+  {
+    "image": "./marksAll/meawell.svg"
+    
+  },
+  {
+    "image": "./marksAll/sonoff.svg"
+    
+  }
+]
