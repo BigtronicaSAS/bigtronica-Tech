@@ -16,8 +16,7 @@ const ContactPage = () => {
       </div>
       <Marks />
       <Interest />
-      {/* <Mail />
-      <Footer /> */}
+      <Footer /> 
     </div>
   )
 }
