@@ -14,7 +14,7 @@ const Footer = () => {
             <p>Al Alcance De Tus <span class="titleSpan">Ideas</span></p>
           </div>
           <a className="button" href="https://api.whatsapp.com/message/YKLYIHRFLUVCI1?autoload=1&app_absent=0" target="blank"><span>¡Contáctanos!</span></a>
-          <div className="social-Footer flexAround innerWidth" >
+          <div className="social-icon flexCenter innerWidth" >
             <a href="https://www.instagram.com/bigtronica/" target="blank">
               <img src="./Instagram.svg" alt="Instagram" />
             </a>

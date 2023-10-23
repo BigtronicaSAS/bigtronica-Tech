@@ -36,11 +36,16 @@
     margin-left: 0px;
 }
 
+.footer .SectionSocial .ContentSocial .social-icon{
+gap: 20px;
+}
+
 .footer .subFooter {
     width: 1200px;
     margin-bottom: 35px;
     padding-top: 25px;
 }
+
 
 .footer .subFooter .article_info h4 {
     color: black;
