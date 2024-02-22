@@ -13,6 +13,28 @@ const  Medidas = {
     DUTY: 'Duty',
     NCV: 'NCV',
     RMS: 'TrueRMS',
+    BL: 'Bluetooth',
+    hFE: 'Transistor',
+    VFC: 'VFC',
+    RPM: 'RPM',
+    TESTB: 'Bateria Test',
+    LIVE: 'Live Test',
+    LPF: 'Filtro Bajo',
+    LOZ: 'Impedancia Baja',
+    ANALOGBAR: 'Barra Análoga',
+    USB: 'Interfaz USB'
 }
 
-export default Medidas
+const Aplicacion = {
+    MOTOR: 'Automotriz',
+    BASIC: 'Básico',
+    ELECTRONICA: 'Electrónica',
+    ElECTRICO: 'Eléctrico',
+    BOLSILLO: 'Bolsillo'
+}
+
+
+export {
+    Medidas,
+    Aplicacion
+} 

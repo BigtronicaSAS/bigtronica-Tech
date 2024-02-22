@@ -88,6 +88,9 @@ a {
   font-weight: 600;
 }
 
+
+
+
 /* media queries */
 @media (min-width: 1536px) {
   .innerWidth {
