@@ -6,9 +6,8 @@ const BuyPage = () => {
     return (
         <div>
 
-            
-         <Footer />   
-         </div>
+            <Footer />
+        </div>
 
     )
 }
