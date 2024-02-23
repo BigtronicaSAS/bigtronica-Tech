@@ -22,7 +22,8 @@ const  Medidas = {
     LPF: 'Filtro Bajo',
     LOZ: 'Impedancia Baja',
     ANALOGBAR: 'Barra Análoga',
-    USB: 'Interfaz USB'
+    USB: 'Interfaz USB',
+    INRUSH: 'Corriente Inrush'
 }
 
 const Aplicacion = {
