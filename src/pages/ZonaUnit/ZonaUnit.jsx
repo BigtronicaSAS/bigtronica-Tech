@@ -55,7 +55,7 @@ const ZonaUnit = () => {
           <SideBar />
         </div>
         <div className="home_list-wrap">
-          {resultsFound ? <ListProducts list={filteredUnit} /> : <EmptyView />}
+          {resultsFound ? <ListProducts list={filteredUnit} /> : <EmptyView/>}
         </div>
       </div>
     </div>
