@@ -1,8 +1,8 @@
 const  Medidas = {
-    VAC: 'VoltajeAC',
-    VDC: 'VoltajeDC',
-    CDC: 'CorrienteDC',
-    CAC: 'CorrienteAC',
+    VAC: 'Voltaje AC',
+    VDC: 'Voltaje DC',
+    CDC: 'Corriente DC',
+    CAC: 'Corriente AC',
     R: 'Resistencia',
     C: 'Capacitancia',
     F: 'Frecuencia',
@@ -33,6 +33,7 @@ const Aplicacion = {
     ElECTRICO: 'Eléctrico',
     BOLSILLO: 'Bolsillo'
 }
+
 
 
 export {
