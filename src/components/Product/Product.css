@@ -2,6 +2,13 @@
   border: 1px solid rgba(232, 7, 7, 0.199);
   padding: 20px;
   border-radius: 10px;
+  position: relative;
+}
+
+.productCheck{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .listItem-wrap img {
     width: 100%;
@@ -44,8 +51,6 @@
     letter-spacing: 18px;
   }
   .listItem-wrap .moreInfo p {
-    background: black;
-    border-radius: 10px;
-    color: white;
-    padding: 10px 13px;
+  color: black;
+  font-weight: 600;
   }

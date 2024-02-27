@@ -1,0 +1,16 @@
+.ModalContainer{
+    position: relative;
+    min-width: 1200px;
+    height: 700px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.closeModal{
+width: 30px;
+position: absolute;
+top: 0;
+right: 0;
+margin: 10px;
+cursor: pointer;
+}

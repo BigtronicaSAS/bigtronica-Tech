@@ -9,9 +9,10 @@ import useUnit from "../../Hook/useUnit";
 import Header from "../../components/Header/Header";
 import { TbFilterSearch } from "react-icons/tb";
 import { IoExit } from "react-icons/io5";
+import { LuSquareEqual } from "react-icons/lu";
 
 const ZonaUnit = () => {
-  const { categoriaActual, mediciones, checkBox } = useUnit();
+  const { categoriaActual, mediciones, checkBox, handleClickModal} = useUnit();
   const [searchInput, setSearchInput] = useState("");
   const [resultsFound, setResultsFound] = useState(true);
   const [filteredUnit, setFilteredUnit] = useState([]);
@@ -36,7 +37,6 @@ const ZonaUnit = () => {
       updatedList = updatedList.filter((item) =>
         checkBox.every((medicion) => item.Medicion.includes(medicion))
       );
-      console.log(updatedList);
     }
 
     setFilteredUnit(updatedList);
@@ -44,7 +44,6 @@ const ZonaUnit = () => {
   };
 
   useEffect(() => {
-    console.log(checkBox);
     applyFilters();
   }, [searchInput, categoriaActual, mediciones, checkBox]);
 
@@ -64,13 +63,13 @@ const ZonaUnit = () => {
       <div className="home_panelList-wrap">
         <div className={`home_panel-wrap ${showSidebar ? 'show' : 'hide'}`}>
           <div className="ClosePanel" onClick={() => setShowSidebar(false)} ><IoExit /></div>
-          
           <SideBar />
         </div>
         <div className="home_list-wrap">
           {resultsFound ? <ListProducts list={filteredUnit} /> : <EmptyView />}
         </div>
       </div>
+      <div className="BotonComparar" onClick={()=>handleClickModal()}><LuSquareEqual /> Comparar</div>
     </div>
   );
 };

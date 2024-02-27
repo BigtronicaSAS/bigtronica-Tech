@@ -4,6 +4,7 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 import BuyPage from "./pages/BuyPage/BuyPage";
 import ZonaUnit from "./pages/ZonaUnit/ZonaUnit.jsx";
 import { UnitProvider } from "./Context/UnitProvider.jsx";
+import Layout from "./Layouts/Layout.jsx";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         path="/Unit"
         element={
           <UnitProvider>
-            <ZonaUnit />
+            <Layout />
           </UnitProvider>
         }
       />

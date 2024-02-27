@@ -9,10 +9,31 @@ const UnitProvider = ({ children }) => {
   const [categoriaActual, setCategoriaActual] = useState({});
   const [mediciones, setMediciones] = useState({});
   const [checkBox, setCheckBox] = useState([]);
+  const [compareProduct, setCompareProduct] = useState([])
+  const [modal, setModal] = useState(false);
+
+  const CompareProducts = (ProductItem)=>{
+    if(compareProduct.includes(ProductItem)){
+      setCompareProduct((prevCompareProduct) =>
+      prevCompareProduct.filter((item) => item !== ProductItem))
+    }else{
+      setCompareProduct((prevCompareProduct) => [...prevCompareProduct, ProductItem])
+    }
+    
+  }
+
+  const cleanProductos = ()=>{
+    setModal(false);
+    setCompareProduct([])
+  }
 
   const Resetfilter = () => {
     setCategoriaActual({});
     setCheckBox([]);
+  };
+
+  const handleClickModal = () => {
+    setModal(!modal);
   };
 
   const obtenerMediciones = async () => {
@@ -56,6 +77,11 @@ const UnitProvider = ({ children }) => {
         handleCheckedMedicion,
         checkBox,
         Resetfilter,
+        cleanProductos,
+        CompareProducts,
+        handleClickModal,
+        compareProduct,
+        modal
       }}
     >
       {children}
