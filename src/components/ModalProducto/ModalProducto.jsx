@@ -5,7 +5,6 @@ import ListProducts from "../ListProduct/ListProducts";
 import DataTable from "react-data-table-component";
 import {columns, features} from "../../data/Columns";
 
-
 const ModalProducto = () => {
   const { cleanProductos, compareProduct } = useUnit();
   return (
@@ -27,8 +26,8 @@ const ModalProducto = () => {
             />
           </svg>
         </div>
-        <ListProducts list={compareProduct} />
-        <DataTable columns={columns} data={compareProduct} />
+        <p>Caracteristicas Principales</p>
+        <div><DataTable columns={columns} data={compareProduct}/></div>
         <p>Otras Caracteristicas</p>
 
         <DataTable columns={features} data={compareProduct} />
