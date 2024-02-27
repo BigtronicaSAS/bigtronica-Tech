@@ -1,5 +1,6 @@
 .h-wrapper {
   color: white;
+  background: black;
 }
 
 .h-container {
@@ -9,13 +10,17 @@
   color: white;
 }
 
+.container_mobile{
+  z-index: 10;
+}
+
 .logo-container {
   width: 50px;
   height: 50px;
   background: white;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 3;
+  z-index: 10;
   transform: scale(1);
   transition: 0.3s ease-in-out;
 }
@@ -142,7 +147,7 @@
   }
 
   .h-menu {
-    gap: 2.5rem;
+    display: none;
   }
 
   .navbar-text .button {
@@ -155,16 +160,14 @@
     display: block;
   }
 
-  .h-menu {
-    display: none;
-  }
+
 
   .social-icon {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -185,6 +188,7 @@
 
   .h-container {
     padding: 1rem 0.5rem 0.5rem 0.9rem;
+
   }
 
   .secondaryText {
@@ -197,6 +201,22 @@
     margin-left: 0;
     z-index: 1;
   }
+
+  .button{
+    display: none;
+  }
+
+  .container_mobile{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .h-mobile{
+    row-gap: 0;
+  }
+  
 }
 
 @media (max-width: 450px) {
@@ -212,6 +232,8 @@
   .navbar-text .button {
     font-size: 0.95rem;
   }
+
+
 }
 
 @media (max-width: 360px) {
@@ -219,3 +241,4 @@
     display: none;
   }
 }
+

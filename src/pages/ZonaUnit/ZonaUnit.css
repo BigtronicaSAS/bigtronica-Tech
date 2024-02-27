@@ -14,6 +14,7 @@
     display: flex;
   }
   .home_panel-wrap {
+    position: relative;
     flex-basis: 280px;
     padding: 1rem;
   }
@@ -22,3 +23,38 @@
     padding: 1rem;
   }
   
+  .filterSearch{
+    display: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  .ClosePanel{
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .filterSearch{
+      display: inline-block;
+    }
+    .ClosePanel{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 2rem;
+      padding: 5px;
+      color: #da2020;
+    }
+    .home_panel-wrap{
+      display: none;
+      position: absolute;
+      background: white;
+    }
+    .home_panel-wrap.show {
+      display: block;
+    }
+    
+    .home_panel-wrap.hide {
+      display: none;
+    }
+  }

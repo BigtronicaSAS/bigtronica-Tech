@@ -7,13 +7,11 @@ const EmptyView =() =>{
   console.log(checkBox)
   return (
     <div className='emptyView-wrap'>
-    <p>Si deseas Buscar una<span>{categoriaActual.nombre}</span> con las siguientes caracteristicas</p>
-    div
-    <ul>
+    <p>Si deseas Buscar {categoriaActual.nombre== 'pinza' ? 'una' : 'un'}<span> {categoriaActual.nombre} </span> con las siguientes caracteristicas:  </p>
      {checkBox.map((item)=>(
-      <li>{item}</li>
+      <p> {item}, </p>
      )) }
-    </ul>
+
   </div>
   )
 }

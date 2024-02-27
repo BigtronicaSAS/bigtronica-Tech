@@ -137,7 +137,7 @@ const Pinzas =[
         Cuentas: 9999,
         Seguridad: 2,
         ImagenSrc: 'https://meters.uni-trend.com/storage/2022/04/UT202BT-1.jpg',
-        Medicion: [VDC,VAC,CAC,  R, C,T,F,AUTO,RMS,DIODO,CONTINUIDAD,NCV,APP,INRUSH,LPF],
+        Medicion: [VDC,VAC,CAC,  R, C,T,F,AUTO,RMS,DIODO,CONTINUIDAD,NCV,APP,INRUSH,LPF, BL],
         Aplicacion: ElECTRICO,
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1u1BJSBMkiE1p1Ho43okKFvKrxUUMdyFV/view', title: PDF },
