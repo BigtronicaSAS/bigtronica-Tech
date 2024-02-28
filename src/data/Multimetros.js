@@ -26,7 +26,8 @@ const Multimetros = [
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1C5Q5byvAnS1rWzsab3rArvPOpFTmoEa7/view', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/multimetros/3201-multimetro-uni-t-ut33a-5053212032012.html', title: TIENDA }
-        }
+        },
+        checked: false
     },
     {
         id: 2,
@@ -49,7 +50,9 @@ const Multimetros = [
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1C5Q5byvAnS1rWzsab3rArvPOpFTmoEa7/view', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/multimetros/1185-multimetro-uni-t-ut33c-6935750533178.html', title: TIENDA },
-        }
+        },
+        checked: false
+        
     },
     {
         id: 3,
@@ -71,7 +74,8 @@ const Multimetros = [
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/14xqJOjIm83Ezsv9qtqFzKl4jfuknqfva/view?usp=sharing', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/multimetros/1555-multimetro-uni-t-ut120c-6935750512036.html', title: TIENDA },
-        }
+        },
+        checked: false
     },
     {
         id: 4,
@@ -93,7 +97,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1pLUVsate0H7DiNVHrQNf-zHFhEfpGdfY/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/3000-multimetro-uni-t-ut123-5053212030001.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 5,
@@ -116,7 +121,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1t_Wf-1YjGKXdP7wpqnc6G1FZwi2SebLS/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/3202-multimetro-uni-t-ut123d-5053212032029.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 6,
@@ -138,7 +144,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1t_Wf-1YjGKXdP7wpqnc6G1FZwi2SebLS/view',title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/3202-multimetro-uni-t-ut123d-5053212032029.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 7,
@@ -161,7 +168,8 @@ const Multimetros = [
             PDF: {src:'https://drive.google.com/file/d/1gXIsE2niMPKbVxz-SKdsvtalW4un_9CD/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/3098-multimetro-uni-t-ut60bt-5053212030988.html', title: TIENDA},
             APP: {src:'https://drive.google.com/file/d/1tQzB5mPFfjIES55YPoiMbC_ZPBejyxf-/view', title: APP}
-        }
+        },
+        checked: false
     },
     {
         id: 8,
@@ -183,7 +191,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1a-MUe6XAKaqG0Yj93V-bPyNdeN5o9O39/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/2142-multimetro-uni-t-ut39a-6935750539200.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 9,
@@ -205,7 +214,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1EDO0pwv3JQZFI3QGToFhrHGWfB6RI3cp/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/1865-multimetro-uni-t-ut39c-6935750516393.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 10,
@@ -227,7 +237,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1AX0eW3ftO_pfkNPlUEBCh8TO7w21Kwqy/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/2675-multimetro-uni-t-ut136b-6935750513651.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 11,
@@ -249,7 +260,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1AX0eW3ftO_pfkNPlUEBCh8TO7w21Kwqy/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/3165-multimetro-uni-t-ut136c-5053212031657.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 12,
@@ -271,7 +283,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1ZV-FtIaDLiMb8yz60gVcFCsprZ8cfpyt/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/3204-multimetro-automotriz-uni-t-ut105-5053212032043.html', title:TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 13,
@@ -293,7 +306,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1ZV-FtIaDLiMb8yz60gVcFCsprZ8cfpyt/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/3203-multimetro-automotriz-uni-t-ut107-5053212032036.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 14,
@@ -315,7 +329,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/15kS9hwHVW_afbBAtTyWkT-ACdJ6LWdgF/view', title:PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/3235-multimetro-uni-t-ut89xd-5053212032357.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 15,
@@ -337,7 +352,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1RBjIj22cBjDOUylUXVZ_XOfcbOhYMldX/view?usp=sharing', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/2830-multimetro-uni-t-ut139c-5053212028305.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 16,
@@ -359,7 +375,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/1RBjIj22cBjDOUylUXVZ_XOfcbOhYMldX/view?usp=sharing', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/2830-multimetro-uni-t-ut139c-5053212028305.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
     {
         id: 17,
@@ -381,7 +398,8 @@ const Multimetros = [
         Botones: {
             PDF: {src:'https://drive.google.com/file/d/12n3zkJLKsUsw2QAM65fxV5wQGfpetUOC/view', title: PDF},
             Tienda: {src:'https://www.bigtronica.com/equipos-medicion/multimetros/1033-multimetro-uni-t-ut61d-5053212010331.html', title: TIENDA},
-        }
+        },
+        checked: false
     },
 
 ]

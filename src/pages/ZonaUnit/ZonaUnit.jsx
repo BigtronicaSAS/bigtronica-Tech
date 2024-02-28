@@ -12,14 +12,14 @@ import { IoExit } from "react-icons/io5";
 import { LuSquareEqual } from "react-icons/lu";
 
 const ZonaUnit = () => {
-  const { categoriaActual, mediciones, checkBox, handleClickModal} = useUnit();
+  const { productos, categoriaActual, mediciones, checkBox, handleClickModal} = useUnit();
   const [searchInput, setSearchInput] = useState("");
   const [resultsFound, setResultsFound] = useState(true);
   const [filteredUnit, setFilteredUnit] = useState([]);
   const [showSidebar, setShowSidebar] = useState(false);
 
   const applyFilters = () => {
-    let updatedList = Unit;
+    let updatedList = productos;
 
     if (categoriaActual.id > 0) {
       updatedList = updatedList.filter(

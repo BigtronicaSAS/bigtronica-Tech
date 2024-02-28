@@ -27,7 +27,8 @@ const Pinzas =[
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1M0RNf2zMiMlM7euuaLYoGYYfWahxLTs3/view', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/pinzas-voltiamperimetricas/2510-pinza-voltiamperimetrica-uni-t-ut200a-5053212025106.html', title: TIENDA }
-        }
+        },
+        checked: false
     },
     {
         id: 19,
@@ -50,7 +51,8 @@ const Pinzas =[
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1xuzUlbIYQ5RWoD5-ABRTJj0fBxVGTpRU/view', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/pinzas-voltiamperimetricas/1034-pinza-voltiamperimetrica-uni-t-ut202a-6935750520277.html', title: TIENDA }
-        }
+        },
+        checked: false
     },
     {
         id: 20,
@@ -73,7 +75,8 @@ const Pinzas =[
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1evzYRy8InQShh7qs93EJIeyJ7o8tOm9y/view', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/pinzas-voltiamperimetricas/3330-pinza-voltiamperimetrica-uni-t-ut200b-5053212033309.html', title: TIENDA }
-        }
+        },
+        checked: false
     },
     {
         id: 21,
@@ -96,7 +99,8 @@ const Pinzas =[
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1CBEqsov1407BjQK03xfaOucXCrxsFDmZ/view?usp=sharing', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/pinzas-voltiamperimetricas/1867-pinza-voltiamperimetrica-uni-t-ut202-6935750520260.html', title: TIENDA }
-        }
+        },
+        checked: false
     },
     {
         id: 22,
@@ -119,7 +123,8 @@ const Pinzas =[
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1CBEqsov1407BjQK03xfaOucXCrxsFDmZ/view', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/pinzas-voltiamperimetricas/2983-pinza-voltiamperimetrica-uni-t-ut203-5053212029838.html', title: TIENDA }
-        }
+        },
+        checked: false
     },
     {
         id: 23,
@@ -143,7 +148,8 @@ const Pinzas =[
             PDF: { src: 'https://drive.google.com/file/d/1u1BJSBMkiE1p1Ho43okKFvKrxUUMdyFV/view', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/pinzas-voltiamperimetricas/3097-pinza-voltiamperimetrica-uni-t-ut202bt-5053212030971.html', title: TIENDA },
             APP: {src:'https://drive.google.com/file/d/1tQzB5mPFfjIES55YPoiMbC_ZPBejyxf-/view', title: APP}
-        }
+        },
+        checked: false
     },
     {
         id: 24,
@@ -166,7 +172,8 @@ const Pinzas =[
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/15BvLt6j5N5DeL5PDagXxviqnGrpj6AO7/view', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/pinzas-voltiamperimetricas/2828-pinza-voltiamperimetrica-uni-t-ut210e-5053212028282.html', title: TIENDA }
-        }
+        },
+        checked: false
     },
     {
         id: 25,
@@ -189,7 +196,8 @@ const Pinzas =[
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1njr7mn7frhjG7DAi-iIbky1IVQYSJq7A/view', title: PDF },
             Tienda: { src: 'https://www.bigtronica.com/equipos-medicion/pinzas-voltiamperimetricas/3267-pinza-voltiamperimetrica-uni-t-ut207b-5053212032678.html', title: TIENDA }
-        }
+        },
+        checked: false
     },
 
 ]

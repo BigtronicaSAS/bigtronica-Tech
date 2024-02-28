@@ -1,16 +1,31 @@
-.ModalContainer{
+.ContainerPadre{
     position: relative;
-    min-width: 1200px;
+    min-width: 1500px;
     height: 700px;
     padding: 10px;
     border-radius: 15px;
 }
 
 .closeModal{
-width: 30px;
-position: absolute;
+width: 40px;
+color: #da2020;
+position: fixed;
 top: 0;
 right: 0;
 margin: 10px;
 cursor: pointer;
+z-index: 10000;
+}
+
+.ModalContainer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ModalContainer h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }

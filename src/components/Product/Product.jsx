@@ -1,15 +1,16 @@
-import React from "react";
 import "./Product.css";
 import useUnit from "../../Hook/useUnit";
-const Product = ({ ProductItem }) => {
-  const {CompareProducts} = useUnit();
+const Product = ({ ProductItem, BtnComparar }) => {
+  const { CompareProducts } = useUnit();
   const { ImagenSrc, Modelo, Botones, Aplicacion } = ProductItem;
   return (
     <div className="listItem-wrap">
       <div className="checkbox productCheck ">
-        <input type="checkbox" onChange={() => CompareProducts(ProductItem)} />
+        <div onClick={() => CompareProducts(ProductItem)}>
+          {BtnComparar}
+        </div>
       </div>
-      <img src={ImagenSrc} alt={Modelo} />
+      <div><img src={ImagenSrc} alt={Modelo} /></div>
       <div>
         <h4>{Modelo}</h4>
         <div className="moreInfo">

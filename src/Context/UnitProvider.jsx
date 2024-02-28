@@ -1,6 +1,8 @@
 import { createContext, useState, useEffect, useRef } from "react";
 import { categoryList } from "../data/CategoryList";
 import { Medidas } from "../data/Medidas";
+import Unit from "../data/Unit";
+import Product from "../components/Product/Product";
 
 const UnitContext = createContext();
 
@@ -8,8 +10,9 @@ const UnitProvider = ({ children }) => {
   const [categorias, setCategorias] = useState([]);
   const [categoriaActual, setCategoriaActual] = useState({});
   const [mediciones, setMediciones] = useState({});
+  const [productos, setProductos] = useState({});
   const [checkBox, setCheckBox] = useState([]);
-  const [compareProduct, setCompareProduct] = useState([])
+  const [compareProduct, setCompareProduct] = useState([]);
   const [modal, setModal] = useState(false);
 
   const CompareProducts = (ProductItem)=>{
@@ -21,12 +24,13 @@ const UnitProvider = ({ children }) => {
     }
     
   }
-
-  const cleanProductos = ()=>{
+  const obtenerProductos = () => {
+    setProductos(Unit);
+  };
+  const cleanProductos = () => {
     setModal(false);
-    setCompareProduct([])
-  }
-
+    setCompareProduct([]);
+  };
   const Resetfilter = () => {
     setCategoriaActual({});
     setCheckBox([]);
@@ -63,11 +67,14 @@ const UnitProvider = ({ children }) => {
   useEffect(() => {
     obtenerCategorias();
     obtenerMediciones();
+    obtenerProductos();
   }, []);
 
   return (
     <UnitContext.Provider
       value={{
+        obtenerProductos,
+        productos,
         categorias,
         obtenerCategorias,
         handleClickCategoria,
@@ -81,7 +88,7 @@ const UnitProvider = ({ children }) => {
         CompareProducts,
         handleClickModal,
         compareProduct,
-        modal
+        modal,
       }}
     >
       {children}

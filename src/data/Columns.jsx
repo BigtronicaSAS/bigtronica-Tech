@@ -21,22 +21,22 @@ const columns = [
     selector: (row) => row.Modelo,
   },
   {
-    name: "Voltaje DC (V)",
+    name: "DC (V)",
     selector: (row) => row.VoltajeDC,
     sortable: true,
   },
   {
-    name: "Voltaje AC (V)",
+    name: "AC (V)",
     selector: (row) => row.VoltajeAC,
     sortable: true,
   },
   {
-    name: "Corriente DC (A)",
+    name: "DC (A)",
     selector: (row) => row.CorrienteDC,
     sortable: true,
   },
   {
-    name: "Corriente AC (A)",
+    name: "AC (A)",
     selector: (row) => row.CorrienteAC,
     sortable: true,
   },
@@ -46,7 +46,7 @@ const columns = [
     sortable: true,
   },
   {
-    name: "Capacitancia (uF)",
+    name: "Condensador (uF)",
     selector: (row) => row.Capacitancia,
     sortable: true,
   },
@@ -57,12 +57,12 @@ const columns = [
     sortable: true,
   },
   {
-    name: "Temperatura Min",
+    name: "°C Min",
     selector: (row) => row.Temperatura.min,
     sortable: true,
   },
   {
-    name: "Temperatura Max",
+    name: "°C Max",
     selector: (row) => row.Temperatura.max,
     sortable: true,
   },
@@ -94,54 +94,54 @@ const features = [
   {
     name: "Continuidad",
     selector: (row) =>
-      row.Medicion.includes("Continuidad") ? <FaCheckCircle /> : "",
+      row.Medicion.includes("Continuidad") ? <FaCheckCircle className="CheckCircle" /> : "",
   },
   {
     name: "Diodo",
     selector: (row) =>
-      row.Medicion.includes("Diodo") ? <FaCheckCircle /> : " ",
+      row.Medicion.includes("Diodo") ? <FaCheckCircle className="CheckCircle" /> : " ",
   },
   {
     name: "Duty",
     selector: (row) =>
-      row.Medicion.includes("Duty") ? <FaCheckCircle /> : " ",
+      row.Medicion.includes("Duty") ? <FaCheckCircle className="CheckCircle" /> : " ",
   },
   {
     name: "NCV",
-    selector: (row) => (row.Medicion.includes("NCV") ? <FaCheckCircle /> : " "),
+    selector: (row) => (row.Medicion.includes("NCV") ? <FaCheckCircle className="CheckCircle" /> : " "),
   },
   {
     name: "Auto Rango",
     selector: (row) =>
-      row.Medicion.includes("AutoRango") ? <FaCheckCircle /> : " ",
+      row.Medicion.includes("AutoRango") ? <FaCheckCircle className="CheckCircle" /> : " ",
   },
   {
     name: "True RMS",
     selector: (row) =>
-      row.Medicion.includes("TrueRMS") ? <FaCheckCircle /> : " ",
+      row.Medicion.includes("TrueRMS") ? <FaCheckCircle className="CheckCircle" /> : " ",
   },
   {
     name: "hFE",
     selector: (row) =>
-      row.Medicion.includes("Transistor") ? <FaCheckCircle /> : " ",
+      row.Medicion.includes("Transistor") ? <FaCheckCircle className="CheckCircle" /> : " ",
   },
   {
     name: "VFC",
-    selector: (row) => (row.Medicion.includes("VFC") ? <FaCheckCircle /> : " "),
+    selector: (row) => (row.Medicion.includes("VFC") ? <FaCheckCircle className="CheckCircle" /> : " "),
   },
   {
     name: "RPM",
-    selector: (row) => (row.Medicion.includes("RPM") ? <FaCheckCircle /> : " "),
+    selector: (row) => (row.Medicion.includes("RPM") ? <FaCheckCircle className="CheckCircle" /> : " "),
   },
   {
     name: "USB",
     selector: (row) =>
-      row.Medicion.includes("Interfaz USB") ? <FaCheckCircle /> : " ",
+      row.Medicion.includes("Interfaz USB") ? <FaCheckCircle className="CheckCircle" /> : " ",
   },
   {
     name: "Bluetooth",
     selector: (row) =>
-      row.Medicion.includes("Bluetooth") ? <FaCheckCircle /> : "",
+      row.Medicion.includes("Bluetooth") ? <FaCheckCircle className="CheckCircle" /> : "",
   },
 ];
 

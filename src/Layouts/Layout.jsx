@@ -1,4 +1,5 @@
 import useUnit from "../Hook/useUnit";
+import ModalEmpty from "../components/ModalEmpty/ModalEmpty";
 import ModalProducto from "../components/ModalProducto/ModalProducto";
 import ZonaUnit from "../pages/ZonaUnit/ZonaUnit";
 import Modal from 'react-modal'
@@ -19,13 +20,13 @@ Modal.setAppElement('#root')
 
 export default function Layout() {
 
-  const { modal} = useUnit();
-  
+  const { modal, compareProduct} = useUnit();
+  let Compare = compareProduct.length !== 0;
   return (
     <>
         <ZonaUnit />
         <Modal isOpen={modal} style={customStyles}>
-            <ModalProducto/>
+            { Compare  ? <ModalProducto/> : <ModalEmpty frase={'Por favor, seleccione los productos que desea comparar.'} />}
         </Modal>
     </>
   )
