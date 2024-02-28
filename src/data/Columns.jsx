@@ -41,18 +41,18 @@ const columns = [
     sortable: true,
   },
   {
-    name: "Resistencia (MΩ)",
+    name: "Resis... (MΩ)",
     selector: (row) => row.Resistencia,
     sortable: true,
   },
   {
-    name: "Condensador (uF)",
+    name: "Conden... (mF)",
     selector: (row) => row.Capacitancia,
     sortable: true,
   },
 
   {
-    name: "Frecuencia (Khz)",
+    name: "Frecue... (Khz)",
     selector: (row) => row.Frecuencia,
     sortable: true,
   },
@@ -142,6 +142,11 @@ const features = [
     name: "Bluetooth",
     selector: (row) =>
       row.Medicion.includes("Bluetooth") ? <FaCheckCircle className="CheckCircle" /> : "",
+  },
+  {
+    name: "Test Bateria",
+    selector: (row) =>
+      row.Medicion.includes("Bateria Test") ? <FaCheckCircle className="CheckCircle" /> : "",
   },
 ];
 
