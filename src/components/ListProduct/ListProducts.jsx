@@ -1,4 +1,4 @@
-import React, {useId} from "react";
+import React from "react";
 import Product from "../Product/Product";
 import "./ListProduct.css";
 import useUnit from "../../Hook/useUnit";
@@ -18,10 +18,9 @@ const ListProducts = ({ list }) => {
         ) : (
           <ImFilter className="UnFiltered" />
         );
-        let prefix = useId();
         return (
           <Product
-            key={prefix}
+            key={ProductItem.id}
             ProductItem={ProductItem}
             BtnComparar={BtnComparar}
           />

@@ -7,7 +7,7 @@ const { TIENDA, PDF, APP } = Botones
 
 const Pinzas = [
     {
-        id: 19,
+        id: 20,
         Category: 'pinza',
         Modelo: 'UT200A+',
         Glamp: 28, // En mm
@@ -22,7 +22,7 @@ const Pinzas = [
         Cuentas: 3099,
         Seguridad: 2,
         ImagenSrc: 'https://meters.uni-trend.com/storage/2023/02/UT200A-1.jpg',
-        Medicion: [VAC, VDC, CAC, R, F, DIODO, CONTINUIDAD],
+        Medicion: [VAC, VDC, CAC, R, F, DIODO, CONTINUIDAD, LIVE, RMS],
         Aplicacion: ElECTRICO,
         Botones: {
             PDF: { src: 'https://drive.google.com/file/d/1M0RNf2zMiMlM7euuaLYoGYYfWahxLTs3/view', title: PDF },
@@ -30,7 +30,7 @@ const Pinzas = [
         }
     },
     {
-        id: 20,
+        id: 21,
         Category: 'pinza',
         Modelo: 'UT202A+',
         Glamp: 28, // En mm
@@ -54,7 +54,7 @@ const Pinzas = [
         checked: false
     },
     {
-        id: 21,
+        id: 22,
         Category: 'pinza',
         Modelo: 'UT200B+',
         Glamp: 28, // En mm
@@ -77,7 +77,7 @@ const Pinzas = [
         }
     },
     {
-        id: 22,
+        id: 23,
         Category: 'pinza',
         Modelo: 'UT202+',
         Glamp: 28, // En mm
@@ -100,7 +100,7 @@ const Pinzas = [
         }
     },
     {
-        id: 23,
+        id: 24,
         Category: 'pinza',
         Modelo: 'UT203+',
         Glamp: 28, // En mm
@@ -123,7 +123,7 @@ const Pinzas = [
         }
     },
     {
-        id: 24,
+        id: 25,
         Category: 'pinza',
         Modelo: 'UT202BT',
         Glamp: 28, // En mm
@@ -147,7 +147,7 @@ const Pinzas = [
         }
     },
     {
-        id: 25,
+        id: 26,
         Category: 'pinza',
         Modelo: 'UT210E',
         Glamp: 17, // En mm
@@ -170,7 +170,7 @@ const Pinzas = [
         }
     },
     {
-        id: 26,
+        id: 27,
         Category: 'pinza',
         Modelo: 'UT207B',
         Glamp: 42, // En mm
@@ -193,7 +193,7 @@ const Pinzas = [
         }
     },
     {
-        id: 27,
+        id: 28,
         Category: 'pinza',
         Modelo: 'UT204+',
         Glamp: 28, // En mm
