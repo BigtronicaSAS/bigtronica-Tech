@@ -10,13 +10,16 @@ import Header from "../../components/Header/Header";
 import { TbFilterSearch } from "react-icons/tb";
 import { IoExit } from "react-icons/io5";
 import { LuSquareEqual } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const ZonaUnit = () => {
-  const { productos, categoriaActual, mediciones, checkBox, handleClickModal} = useUnit();
+  const { productos, categoriaActual, mediciones, checkBox, compareProduct } =
+    useUnit();
   const [searchInput, setSearchInput] = useState("");
   const [resultsFound, setResultsFound] = useState(true);
   const [filteredUnit, setFilteredUnit] = useState([]);
   const [showSidebar, setShowSidebar] = useState(false);
+  let Compare = compareProduct.length !== 0;
 
   const applyFilters = () => {
     let updatedList = productos;
@@ -47,7 +50,6 @@ const ZonaUnit = () => {
     applyFilters();
   }, [searchInput, categoriaActual, mediciones, checkBox]);
 
-
   return (
     <div className="home">
       <Header
@@ -57,19 +59,32 @@ const ZonaUnit = () => {
             changeInput={(e) => setSearchInput(e.target.value)}
           />
         }
-        filter={<TbFilterSearch onClick={() => setShowSidebar(!showSidebar)} className="filterSearch"/>}
+        filter={
+          <TbFilterSearch
+            onClick={() => setShowSidebar(!showSidebar)}
+            className="filterSearch"
+          />
+        }
       />
 
       <div className="home_panelList-wrap">
-        <div className={`home_panel-wrap ${showSidebar ? 'show' : 'hide'}`}>
-          <div className="ClosePanel" onClick={() => setShowSidebar(false)} ><IoExit /></div>
+        <div className={`home_panel-wrap ${showSidebar ? "show" : "hide"}`}>
+          <div className="ClosePanel" onClick={() => setShowSidebar(false)}>
+            <IoExit />
+          </div>
           <SideBar />
         </div>
         <div className="home_list-wrap">
           {resultsFound ? <ListProducts list={filteredUnit} /> : <EmptyView />}
         </div>
       </div>
-      <div className="BotonComparar" onClick={()=>handleClickModal()}><LuSquareEqual /> Comparar</div>
+      {Compare ? (
+        <Link to={"/Comparar"} className="BotonComparar">
+          <LuSquareEqual /> Comparar Productos
+        </Link>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

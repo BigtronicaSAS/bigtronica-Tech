@@ -5,6 +5,7 @@ import BuyPage from "./pages/BuyPage/BuyPage";
 import ZonaUnit from "./pages/ZonaUnit/ZonaUnit.jsx";
 import { UnitProvider } from "./Context/UnitProvider.jsx";
 import Layout from "./Layouts/Layout.jsx";
+import { ComparePage } from "./pages/ComparePage/ComparePage.jsx";
 
 function App() {
   return (
@@ -12,6 +13,14 @@ function App() {
       <Route path="/" element={<IndexPage />} />
       <Route path="/contacto" element={<ContactPage />} />
       <Route path="/Como-Comprar" element={<BuyPage />} />
+      <Route
+        path="/Comparar"
+        element={
+          <UnitProvider>
+            <ComparePage />
+          </UnitProvider>
+        }
+      />
       <Route
         path="/Unit"
         element={

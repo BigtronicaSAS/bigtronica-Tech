@@ -1,0 +1,28 @@
+.ContainerPadre {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    max-width: 1500px;
+    width: 100%;
+}
+
+.goBack {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.goBack p { display: inline-flex;   vertical-align: middle;}
+
+
+.DatatableContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ModalContainer h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}

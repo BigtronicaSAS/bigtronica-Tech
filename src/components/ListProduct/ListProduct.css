@@ -22,13 +22,6 @@
   }
 }
 
-@media (max-width: 768px) {
-
-  .UnFiltered,
-  .FilterCircle {
-    display: none;
-  }
-}
 
 @media (max-width: 450px) {
   .list-wrap {

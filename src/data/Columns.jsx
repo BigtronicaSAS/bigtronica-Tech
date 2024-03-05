@@ -72,6 +72,9 @@ const features = [
   {
     name: "",
     selector: (row) => <ImageTable src={row.ImagenSrc} />,
+    style: {
+      fixed: "left",
+    }
   },
   {
     name: "Modelo",
