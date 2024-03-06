@@ -14,11 +14,11 @@ const paginationComponentOptions = {
 };
 
 const CompareProduct = () => {
-  const { cleanProductos, compareProduct } = useUnit();
+  const {compareProduct, Resetfilter } = useUnit();
   return (
     <div className="ContainerPadre">
       <div></div>
-      <Link to={"/Unit"} className="goBack" onClick={() => cleanProductos()}>
+      <Link to={"/Unit"} className="goBack" onClick={() => Resetfilter()}>
         <p>
           <IoCaretBackCircleSharp />
         </p>

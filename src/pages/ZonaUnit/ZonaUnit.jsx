@@ -21,6 +21,7 @@ const ZonaUnit = () => {
   let Compare = compareProduct.length !== 0;
 
   const DriverRun =()=>{Driver()}
+
   const applyFilters = () => {
     let updatedList = productos;
 
@@ -47,6 +48,7 @@ const ZonaUnit = () => {
   };
 
   useEffect(() => {
+    setFilteredUnit();
     applyFilters();
   }, [searchInput, categoriaActual, mediciones, checkBox]);
 

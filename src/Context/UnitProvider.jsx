@@ -31,6 +31,7 @@ const UnitProvider = ({ children }) => {
   const Resetfilter = () => {
     setCategoriaActual({});
     setCheckBox([]);
+    setCompareProduct([])
   };
   const obtenerMediciones = async () => {
     setMediciones(Medidas);
