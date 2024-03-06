@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ListProducts from "../../components/ListProduct/ListProducts";
-import Unit from "../../data/Unit";
 import "./ZonaUnit.css";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import EmptyView from "../../components/EmptyView/EmptyView";
@@ -8,10 +7,10 @@ import SideBar from "../../components/SideBar/SideBar";
 import useUnit from "../../Hook/useUnit";
 import Header from "../../components/Header/Header";
 import { TbFilterSearch } from "react-icons/tb";
-import { IoExit } from "react-icons/io5";
 import { LuSquareEqual } from "react-icons/lu";
 import { Link } from "react-router-dom";
-
+import { FaWandMagicSparkles } from "react-icons/fa6";
+import Driver from "../../utils/Driver";
 const ZonaUnit = () => {
   const { productos, categoriaActual, mediciones, checkBox, compareProduct } =
     useUnit();
@@ -21,6 +20,7 @@ const ZonaUnit = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   let Compare = compareProduct.length !== 0;
 
+  const DriverRun =()=>{Driver()}
   const applyFilters = () => {
     let updatedList = productos;
 
@@ -70,10 +70,10 @@ const ZonaUnit = () => {
       <div className="home_panelList-wrap">
         <div className={`home_panel-wrap ${showSidebar ? "show" : "hide"}`}>
           <SideBar />
-          <div className="ClosePanel" onClick={() => setShowSidebar(false)}>
-
-          </div>
-
+          <div
+            className="ClosePanel"
+            onClick={() => setShowSidebar(false)}
+          ></div>
         </div>
         <div className="home_list-wrap">
           {resultsFound ? <ListProducts list={filteredUnit} /> : <EmptyView />}
@@ -83,9 +83,7 @@ const ZonaUnit = () => {
         <Link to={"/Comparar"} className="BotonComparar">
           <LuSquareEqual /> Comparar Productos
         </Link>
-      ) : (
-        ""
-      )}
+      ) : <div className="StartTour" onClick={DriverRun}><FaWandMagicSparkles />Iniciar Tour</div>}
     </div>
   );
 };

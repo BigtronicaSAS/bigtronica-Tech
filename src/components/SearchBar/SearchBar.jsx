@@ -4,7 +4,7 @@ import "./SearchBar.css";
 
 const SearchBar = ({ value, changeInput }) => {
   return (
-    <div className="searchBar-wrap">
+    <div className="searchBar-wrap" id="searchBar-wrap">
       <FaSearch className="searchBar-icon" />
       <input
         type="text"

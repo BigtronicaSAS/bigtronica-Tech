@@ -60,6 +60,25 @@
   cursor: pointer;
   text-transform: uppercase;
 }
+.StartTour{
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  z-index: 100;
+  background: #094b8b;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
 
 @media (max-width: 768px) {
   .filterSearch {
@@ -72,7 +91,7 @@
     font-size: 1.2rem;
    border-radius: 0;
   }
-
+  .StartTour{display: none;}
   .ClosePanel {
     display: block;
     background: rgba(0, 0, 0, 0.445);
