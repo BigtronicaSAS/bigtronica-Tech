@@ -14,9 +14,9 @@ const ListProducts = ({ list }) => {
           (item) => item.id == ProductItem.id
         );
         const BtnComparar = isProductInCompare ? (
-          <FaFilterCircleXmark className="FilterCircle" />
+          <div className="FilterCircle">Agregado</div>
         ) : (
-          <ImFilter className="UnFiltered" />
+          <div className="UnFiltered">Comparar</div>
         );
         return (
           <Product

@@ -7,7 +7,7 @@ import CheckBox from "../CheckBox/CheckBox";
 function SideBar() {
   const { categorias, mediciones, Resetfilter } = useUnit();
   return (
-    <div>
+    <div className="containerSiderBar">
       <h1 className="primaryText">Categorias...</h1>
 
       <div className="sectionCategorias">

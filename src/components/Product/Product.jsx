@@ -6,20 +6,25 @@ const Product = ({ ProductItem, BtnComparar }) => {
   return (
     <div className="listItem-wrap">
       <div className="checkbox productCheck ">
-        <div onClick={() => CompareProducts(ProductItem)}>
-          {BtnComparar}
-        </div>
+        <div onClick={() => CompareProducts(ProductItem)}>{BtnComparar}</div>
       </div>
-      <div><img src={ImagenSrc} alt={Modelo} /></div>
+      <div>
+        <img src={ImagenSrc} alt={Modelo} />
+      </div>
       <div>
         <h4>{Modelo}</h4>
         <div className="moreInfo">
-          <div className="Buttons">
-            {Object.entries(Botones).map(([key, item]) => (
-              <a key={key} target="_blank" href={item.src}>
-                {item.title}
-              </a>
-            ))}
+          <div className="DropdownMenu">
+            <select onChange={(e) => window.open(e.target.value, "_blank")}>
+              <option value="" disabled selected>
+                Mas Info
+              </option>
+              {Object.entries(Botones).map(([key, item]) => (
+                <option className="optionContainer" key={key} value={item.src}>
+                  {item.title}
+                </option>
+              ))}
+            </select>
           </div>
           <p>{Aplicacion}</p>
         </div>

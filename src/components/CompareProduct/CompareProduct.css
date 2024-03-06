@@ -9,8 +9,16 @@
 .goBack {
     display: flex;
     align-items: center;
-    padding: 20px;
-}
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    width: fit-content;
+    border-radius: 15px;
+    margin: 10px;
+    margin-bottom: 30px;
+    gap: 20px;
+ }
 
 .goBack p { display: inline-flex;   vertical-align: middle;}
 
@@ -18,11 +26,23 @@
 .DatatableContainer {
     display: flex;
     flex-direction: column;
+    gap: 40px;
     
 }
 
-.ModalContainer h3 {
+.DatatableContainer  h3 {
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+   
+}
+
+.ContainerInfo{
+    padding: 20px;
+    text-wrap: pretty;
+    background: #afd2ff48;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+
 }

@@ -5,15 +5,21 @@
 }
 
 .UnFiltered {
-  font-size: 1.5rem;
-  color: #da2020;
+  font-size: 1rem;
+  color: white;
+  background: #da2020;
   cursor: pointer;
+  padding: 4px;
+  border-radius:6px;
 }
 
 .FilterCircle {
-  font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.542);
-  cursor:pointer ;
+  font-size: 1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.542);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 10px;
 }
 
 @media (max-width: 1400px) {

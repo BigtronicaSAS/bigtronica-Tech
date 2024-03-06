@@ -69,10 +69,11 @@ const ZonaUnit = () => {
 
       <div className="home_panelList-wrap">
         <div className={`home_panel-wrap ${showSidebar ? "show" : "hide"}`}>
-          <div className="ClosePanel" onClick={() => setShowSidebar(false)}>
-            <IoExit />
-          </div>
           <SideBar />
+          <div className="ClosePanel" onClick={() => setShowSidebar(false)}>
+
+          </div>
+
         </div>
         <div className="home_list-wrap">
           {resultsFound ? <ListProducts list={filteredUnit} /> : <EmptyView />}

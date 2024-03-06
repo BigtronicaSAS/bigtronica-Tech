@@ -1,7 +1,7 @@
 const Botones={
-    TIENDA: '🛒',
-    PDF: '📑',
-    APP: '📱',
+    TIENDA: 'Comprar',
+    PDF: 'Hoja Técnica ',
+    APP: 'Descargar APP',
 }
 
 export default Botones;
