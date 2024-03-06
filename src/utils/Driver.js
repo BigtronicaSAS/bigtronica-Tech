@@ -64,7 +64,7 @@ const Driver = () => {
         popover: {
           title: "Generar Reporte",
           description:
-            "Generar reporte estan sencillo solo de click en 'COMPARAR PRODUCTOS' y ¡listo!",
+            "¡Generar una tabla comparativa es tan fácil como hacer clic en 'COMPARAR PRODUCTOS'",
           side: "left",
           align: "start",
         },
